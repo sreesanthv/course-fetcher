@@ -1,0 +1,6 @@
+data
+.config.json
+docker-compose.yml
+.git
+course-fetcher
+gin-bin

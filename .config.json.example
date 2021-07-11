@@ -1,0 +1,9 @@
+{
+    "port":"0.0.0.0:3000",
+    "log_level":"info",
+    "db_network": "tcp",
+    "db_addr": "db:5432",
+    "db_user": "course-fetcher",
+    "db_password": "course-fetcher",
+    "db_database": "course-fetcher"
+}

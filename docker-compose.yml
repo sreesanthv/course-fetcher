@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - db
+  db:
+    image: postgres:13.3-alpine
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=course-fetcher
+      - POSTGRES_USER=course-fetcher
+      - POSTGRES_PASSWORD=course-fetcher
+    ports:
+      - "5432:5432"
